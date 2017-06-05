@@ -1,0 +1,26 @@
+{
+  "name": "get-primes-day0",
+  "version": "1.0.0",
+  "description": "Javascript function that returns an array of prime numbers from 0 to n",
+  "main": "app/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jasmine tests/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazma1/get-primes-day0.git"
+  },
+  "author": "Mary Mazi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mazma1/get-primes-day0/issues"
+  },
+  "homepage": "https://github.com/mazma1/get-primes-day0#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "jasmine": "^2.6.0"
+  }
+}

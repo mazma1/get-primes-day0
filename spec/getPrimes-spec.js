@@ -25,6 +25,11 @@ describe("Generate an array of prime numbers from 0 to n:", function(){
         expect(primeArray).toEqual('invalid argument');
       });
 
+      it("should return 'invalid argument' for parameter not type number", function(){
+        let primeArray = myApp.getPrimes('21');
+        expect(primeArray).toEqual('invalid argument');
+      });
+
       it("should return 'invalid argument' for '0'", function (){
         let primeArray = myApp.getPrimes(0);
         expect(primeArray).toEqual('invalid argument');
@@ -47,6 +52,11 @@ describe("Generate an array of prime numbers from 0 to n:", function(){
 
       it("should return 'invalid argument' if no parameter is supplied", function(){
         let primeArray = myApp.getPrimes();
+        expect(primeArray).toEqual('invalid argument');
+      });
+
+      it("should return 'invalid argument' if a boolean is supplied", function(){
+        let primeArray = myApp.getPrimes(false);
         expect(primeArray).toEqual('invalid argument');
       });
     });

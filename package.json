@@ -4,10 +4,10 @@
   "description": "Javascript function that returns an array of prime numbers from 0 to n",
   "main": "app/index.js",
   "directories": {
-    "test": "tests"
+    "test": "spec"
   },
   "scripts": {
-    "test": "jasmine tests/tests.js"
+    "test": "jasmine spec/getPrimes-spec.js"
   },
   "repository": {
     "type": "git",

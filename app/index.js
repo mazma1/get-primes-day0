@@ -12,6 +12,7 @@ module.exports = {
             return true;
         };
         if (n <= 0 || typeof n !== 'number') {
+            console.log ("Your input should be a positive number.");
             return ('invalid argument');
         }
         else {

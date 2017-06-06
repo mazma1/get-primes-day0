@@ -17,7 +17,7 @@ module.exports = {
         }
         else {
             let primeList = [];
-            for (var j = 2; j <= n; j++) {
+            for (let j = 2; j <= n; j++) {
                 if (isPrime(j)) {
                     primeList.push(j);
                 } 

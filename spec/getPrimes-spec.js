@@ -20,14 +20,14 @@ describe("Generate an array of prime numbers from 0 to n:", function(){
 
     describe("'Falsy' input parameter", function(){
 
-      it("should return 'not a valid number' for parameter not type number", function(){
+      it("should return 'invalid argument' for parameter not type number", function(){
         let primeArray = myApp.getPrimes('mary');
         expect(primeArray).toEqual('invalid argument');
       });
 
-      it("should return '[]' for '0'", function (){
+      it("should return 'invalid argument' for '0'", function (){
         let primeArray = myApp.getPrimes(0);
-        expect(primeArray).toEqual([]);
+        expect(primeArray).toEqual('invalid argument');
       });
 
       it("should return '[]' if no prime number found", function(){
@@ -35,14 +35,19 @@ describe("Generate an array of prime numbers from 0 to n:", function(){
         expect(primeArray).toEqual([]);
       });
 
-      it("should return '[]' for negative parameters", function(){
+      it("should return 'invalid argument' for negative parameters", function(){
         let primeArray = myApp.getPrimes(-2);
-        expect(primeArray).toEqual([]);
+        expect(primeArray).toEqual('invalid argument');
       });
 
-      it("should return '[]' if no parameter is supplied", function(){
+      it("should return 'invalid argument' for negative parameters", function(){
+        let primeArray = myApp.getPrimes(-20);
+        expect(primeArray).toEqual('invalid argument');
+      });
+
+      it("should return 'invalid argument' if no parameter is supplied", function(){
         let primeArray = myApp.getPrimes();
-        expect(primeArray).toEqual([]);
+        expect(primeArray).toEqual('invalid argument');
       });
     });
 })
